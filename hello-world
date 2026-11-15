@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# evita qualquer problema com o caminho do bash em sistemas diferentes
+
+# para executar em bash temos que tornar executável com chmod +x hello-world
+
+echo -e "\033[31;1mHello World in red!!"

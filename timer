@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+echo "Tempo em segundos?"
+read i
+
+while [ "$i" -ne "0" ];
+do
+  echo $i
+  let i--
+  sleep 1s
+done
+echo "Time is up"
