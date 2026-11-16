@@ -1,52 +1,29 @@
 # Bash Scripts Lab
 
-A personal sandbox for practicing Bash scripting. Each file is a small,
-self-contained script written to explore a language feature, command, or
-concept — from colored terminal output to loops and user input.
+Small, self-contained Bash scripts for practice.
 
-## Contents
+## Scripts
 
-| Script        | Description                                                                 |
-| ------------- | --------------------------------------------------------------------------- |
-| `hello-world` | Prints a colored `Hello World` message using ANSI escape codes.             |
-| `timer`       | Asks for a number of seconds and counts down to zero, printing `Time is up`. |
+- `hello-world`: prints colored “Hello World”.
+- `timer`: prompts for seconds, counts down, prints “Time is up”.
+- `fix-metadata.sh`: merges Google Takeout/JSON metadata into media files via `exiftool` (run in a folder with media + JSON).
+- `merge-metadata.sh`: example `exiftool` command for merging metadata from a JSON into a file.
 
 ## Requirements
 
-- Bash (`#!/usr/bin/env bash` is used so the interpreter is resolved from `PATH`)
-- A Unix-like system (Linux, macOS, WSL)
+- Bash (`#!/usr/bin/env bash`)
+- Unix-like OS (Linux/macOS/WSL)
 
 ## Usage
 
-Make a script executable if needed, then run it:
-
 ```bash
-chmod +x hello-world
+chmod +x hello-world timer
 ./hello-world
-```
-
-Scripts that read input are meant to be run interactively:
-
-```bash
 ./timer
-# Tempo em segundos?
-# 3
-# 3
-# 2
-# 1
-# Time is up
 ```
 
 ## Notes
 
-- Scripts are intentionally simple and independent; there is no shared library
-  or build step.
-- Comments and prompts in some scripts are in Portuguese, as part of the
-  learning process.
-- New scripts are added here as practice continues.
-
-## Adding a script
-
-1. Create the file with a `#!/usr/bin/env bash` shebang.
-2. Make it executable with `chmod +x <script>`.
-3. Add a row to the **Contents** table above.
+- No build step/shared libs; scripts are independent.
+- Some prompts/comments may be in Portuguese.
+- Add new scripts with a `#!/usr/bin/env bash` shebang, `chmod +x`, and list them here.
